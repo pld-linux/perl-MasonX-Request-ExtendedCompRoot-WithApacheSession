@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MasonX
-%define	pnam	Request-ExtendedCompRoot-WithApacheSession
+%define		pdir	MasonX
+%define		pnam	Request-ExtendedCompRoot-WithApacheSession
 Summary:	Extend functionality of Mason's comp_root and add a session to the Mason Request object
 Summary(pl):	Rozszerzenie funkcjonalno¶ci comp_root Masona i dodanie sesji do obiektu Mason Request
 Name:		perl-MasonX-Request-ExtendedCompRoot-WithApacheSession
