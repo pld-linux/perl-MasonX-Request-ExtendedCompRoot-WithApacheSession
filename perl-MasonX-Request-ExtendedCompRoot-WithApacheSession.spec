@@ -6,7 +6,7 @@
 %define	pdir	MasonX
 %define	pnam	Request-ExtendedCompRoot-WithApacheSession
 Summary:	Extend functionality of Mason's comp_root and add a session to the Mason Request object
-#Summary(pl):	
+Summary(pl):	Rozszerzenie funkcjonalno¶ci comp_root Masona i dodanie sesji do obiektu Mason Request
 Name:		perl-MasonX-Request-ExtendedCompRoot-WithApacheSession
 Version:	0.03
 Release:	1
@@ -15,7 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	cad52599a4d033be4ff9b00af96e6cba
-BuildRequires:	perl-devel >= 1:5.8
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-MasonX-Request-ExtendedCompRoot  >= 0.03
@@ -25,11 +25,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This module simply integrates C<MasonX::Request::ExtendedCompRoot>
-and C<MasonX::Request::WithApacheSession>.
+This module simply integrates MasonX::Request::ExtendedCompRoot and
+MasonX::Request::WithApacheSession.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ w prosty sposób integruje MasonX::Request::ExtendedCompRoot
+oraz MasonX::Request::WithApacheSession.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -53,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_vendorlib}/%{pdir}/*/*/*.pm
+%{perl_vendorlib}/MasonX/*/*/*.pm
 %{_mandir}/man3/*
