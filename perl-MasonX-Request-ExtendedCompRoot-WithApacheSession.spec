@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without  tests           # do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	MasonX
@@ -18,7 +18,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-MasonX-Request-ExtendedCompRoot  >= 0.03
+BuildRequires:	perl-MasonX-Request-ExtendedCompRoot >= 0.03
 BuildRequires:	perl-MasonX-Request-WithApacheSession >= 0.24
 %endif
 BuildArch:	noarch
