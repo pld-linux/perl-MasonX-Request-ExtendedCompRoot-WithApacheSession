@@ -18,8 +18,8 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 BuildRequires:	perl-devel >= 1:5.8
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(MasonX::Request::ExtendedCompRoot) >= 0.03
-BuildRequires:	perl(MasonX::Request::WithApacheSession) >= 0.24
+BuildRequires:	perl-MasonX-Request-ExtendedCompRoot  >= 0.03
+BuildRequires:	perl-MasonX-Request-WithApacheSession >= 0.24
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
