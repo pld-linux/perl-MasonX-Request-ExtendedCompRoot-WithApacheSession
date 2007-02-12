@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Request-ExtendedCompRoot-WithApacheSession
 Summary:	Extend functionality of Mason's comp_root and add a session to the Mason Request object
-Summary(pl):	Rozszerzenie funkcjonalno∂ci comp_root Masona i dodanie sesji do obiektu Mason Request
+Summary(pl.UTF-8):   Rozszerzenie funkcjonalno≈õci comp_root Masona i dodanie sesji do obiektu Mason Request
 Name:		perl-MasonX-Request-ExtendedCompRoot-WithApacheSession
 Version:	0.03
 Release:	1
@@ -28,8 +28,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module simply integrates MasonX::Request::ExtendedCompRoot and
 MasonX::Request::WithApacheSession.
 
-%description -l pl
-Ten modu≥ w prosty sposÛb integruje MasonX::Request::ExtendedCompRoot
+%description -l pl.UTF-8
+Ten modu≈Ç w prosty spos√≥b integruje MasonX::Request::ExtendedCompRoot
 oraz MasonX::Request::WithApacheSession.
 
 %prep
