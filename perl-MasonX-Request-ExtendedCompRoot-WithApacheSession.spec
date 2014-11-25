@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	MasonX
 %define		pnam	Request-ExtendedCompRoot-WithApacheSession
+%include	/usr/lib/rpm/macros.perl
 Summary:	Extend functionality of Mason's comp_root and add a session to the Mason Request object
 Summary(pl.UTF-8):	Rozszerzenie funkcjonalności comp_root Masona i dodanie sesji do obiektu Mason Request
 Name:		perl-MasonX-Request-ExtendedCompRoot-WithApacheSession
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	cad52599a4d033be4ff9b00af96e6cba
+URL:		http://search.cpan.org/dist/MasonX-Request-ExtendedCompRoot-WithApacheSession/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
