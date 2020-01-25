@@ -4,7 +4,6 @@
 
 %define		pdir	MasonX
 %define		pnam	Request-ExtendedCompRoot-WithApacheSession
-%include	/usr/lib/rpm/macros.perl
 Summary:	Extend functionality of Mason's comp_root and add a session to the Mason Request object
 Summary(pl.UTF-8):	Rozszerzenie funkcjonalności comp_root Masona i dodanie sesji do obiektu Mason Request
 Name:		perl-MasonX-Request-ExtendedCompRoot-WithApacheSession
